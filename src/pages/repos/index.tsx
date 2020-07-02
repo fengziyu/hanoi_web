@@ -6,11 +6,10 @@ import CreateRepoModal from './components/CreateRepoModal';
 import { GET_REPOS } from './graphql';
 import { GetRepos } from './interface';
 
-const Repo: React.FC = () => {
+const Repos: React.FC = () => {
   const { 
     data, 
     loading, 
-    error
   } = useQuery<GetRepos>(GET_REPOS);
 
   const [visible, setVisible] = useState(false);
@@ -35,4 +34,4 @@ const Repo: React.FC = () => {
   )
 }
 
-export default Repo;
+export default Repos;

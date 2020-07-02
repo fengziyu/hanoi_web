@@ -11,15 +11,15 @@ export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/index' },
     {
-      path: '/repo',
+      path: '/repos',
       component: '@/layouts/index',
-      title: 'repo',
+      title: 'repos',
       menu: {
         name: '项目', // 兼容此写法
       },
       routes: [
         {
-          component: '@/pages/repo/index'
+          component: '@/pages/repos/index'
         }
       ]
     },
